@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="author" content="Victor M. Basurto" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, css, js, javascript" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index/style.css" />
     <title>vicwell28</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container row" id="container">
+      <div class="column col-fis flex-container-column">
+        <h2>Login</h2>
+
+        <div>
+          <form
+            class="flex-container-column"
+            action="#"
+            method="post"
+            target="_self"
+            style="padding: 10px"
+          >
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="vicwell.bj@gmail.com"
+              required
+            />
+            <label for="password">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Min. 8 characters"
+              required
+            />
+            <div style="display: flex;
+            justify-content: space-between; font-size: 75%;">
+              <div style="display: inline-block; display: flex;
+              align-items: center;">
+                <input type="checkbox" name="remind" id="remind" />
+                <label for="remind">Remember me</label>
+              </div>
+              <a href="#">Forget password?</a>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+              "
+            >
+              <a href="./app/main/index.html" id="btnSubmit">Submit</a>
+              <div class="loader" style="display: none"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="column col-sec">
+        <div class="flex-container-column mas">
+          <h2>Titulo</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+            quibusdam vitae repellendus similique praesentium corrupti corporis
+            expedita, asperiores fugit at eligendi eaque, provident blanditiis
+            voluptatem neque. Molestias deleniti recusandae unde.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/index/script.js"></script>
+  </body>
 </html>

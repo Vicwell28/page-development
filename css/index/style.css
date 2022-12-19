@@ -1,0 +1,215 @@
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   *    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   body    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   container    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+.container {
+  background-color: #edf2f4;
+}
+
+#btnSubmit {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#remind {
+    border: none;
+    border-radius: 10px;
+}
+
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   form    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+input[type=email],
+input[type=password] {
+  padding: 10px;
+  margin: 10px 0px 20px 0px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  color: black;
+}
+
+.loader {
+  border: 16px solid black;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  border-bottom: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.col-fis ~ * {
+  background-color: black;
+}
+
+.col-sec {
+}
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  flex-grow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  background: linear-gradient(
+    135deg,
+    hsla(235, 21%, 21%, 1) 10%,
+    hsla(176, 45%, 66%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(235, 21%, 21%, 1) 10%,
+    hsla(176, 45%, 66%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(235, 21%, 21%, 1) 10%,
+    hsla(176, 45%, 66%, 1) 100%
+  );
+
+  background-size: 400%, 400%;
+
+  border: 1px solid white;
+  height: 80%;
+  width: 30%;
+  border-radius: 20px;
+
+  animation: myAnimationColumn 5s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes myAnimationColumn {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0;
+    }
+}
+
+.rowColumn {
+  flex-direction: column;
+  align-items: center;
+}
+
+.rowColumn * {
+  width: 80%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 200%;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.mas {
+    padding: 20px;
+    /* background-color: black; */
+    height: 100%;
+}
+
+
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   media    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .col-sec {
+    display: none;
+  }
+
+  .col-fis {
+    width: 90%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,345 @@
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   media    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: header    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+header {
+  height: 200px;
+}
+
+
+.dates {
+    background-color: white;
+    color: black;
+}
+
+div.dates div span {
+    opacity: 0.8;
+}
+.card-bottom {
+    border-bottom: 1px solid black;
+}
+
+
+#Band {
+    background-color: white;
+    color: black;
+}
+
+.card-city {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+
+.card-city:hover {
+    /* background-color: black; */
+    transform: scale(1.05 ,1.05);
+    box-shadow: 5px 5px 10px red;
+}
+
+.content-city-card {
+    padding: 5px;
+}
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   nav    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+.op {
+    opacity: 0.5;
+}
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+  background-color: transparent;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  margin: 0 10px 0 10px;
+}
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   footer    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+footer {
+  height: 200px;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   img    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+.img-coll {
+  position: relative;
+}
+
+.img-text {
+  position: absolute;
+  top: 80%;
+  color: white;
+  text-align: center;
+}
+
+.card-city  img {
+    width: 100%;
+    object-fit: contain;
+}
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+.ai-stretch {
+  align-items: stretch;
+}
+
+.ai-baseline {
+  align-items: baseline;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-justify {
+    text-align: justify;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.card-city img {
+    border-radius: 10px 10px 0 0;
+}
+
+.img-last {
+    width: 100%;
+}
+
+span {
+    padding: 10px;
+    margin: 5px;
+}
+
+.border-radius {
+    border-radius: 20px;
+}
+
+span.alert {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+#Contact{
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+    background-color: white;
+    color: black;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   media    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: aqua;
+  }
+
+ 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 300px) {
+  body {
+    background-color: black;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .row {
+    flex-direction: row;
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) {
+  .row {
+    flex-direction: row;
+  }
+.col-35{
+    width: 30%;
+}
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,54 @@
+#contact {
+  padding: 20px;
+}
+
+.card-about {
+  padding: 10px;
+}
+
+.puesto {
+  opacity: 0.5;
+}
+
+.btn-about {
+  padding: 10px;
+  font-size: 105%;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(128, 128, 128, 0.8);
+  color: white;
+}
+
+.card-about img {
+  border-radius: 10px;
+}
+
+form {
+  margin: 10px 0 40px 0;
+}
+
+.contact-input {
+  margin-bottom: 15px;
+  padding: 12px;
+}
+
+.btn-contact {
+  padding: 12px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+footer p a {
+  color: white;
+}
+
+footer p {
+  text-align: center;
+}

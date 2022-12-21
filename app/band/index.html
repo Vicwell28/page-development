@@ -5,9 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Band</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../css/band/style.css" />
   </head>
   <body>
+    <div id="modal-pay" style="display: none">
+      <div class="row jc-center ai-center" style="height: 100%">
+        <div
+          class="col-5 row"
+          style="
+            height: 80%;
+            border-radius: 20px;
+            background-color: white;
+            padding: 20px;
+          "
+        >
+          <div class="col-12 row jc-center ai-center">
+            <h1 class="col-12 txt-center">Tickets</h1>
+          </div>
+          <div class="col-12">
+            <form action="#" method="post" class="row jc-center">
+              <label class="col-10" for="persons">
+                Tickets, $15 per person</label
+              >
+              <input
+                class="col-10"
+                type="text"
+                name="persons"
+                id="persons"
+                required
+              />
+              <label class="col-10" for="email"> Send To</label>
+              <input
+                class="col-10"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+              <div class="col-10">
+                <button
+                  onclick="
+              document.getElementById('modal-pay').style.display = 'none'
+              "
+                >
+                  Pay
+                </button>
+              </div>
+            </form>
+            <div class="col-12 row jc-between">
+              <button
+                style="padding: 10px 30px 10px 30px"
+                onclick="              document.getElementById('modal-pay').style.display = 'none'
+            "
+              >
+                close
+              </button>
+              <p>Need <a href="">help?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav class="row">
       <div class="row col-10 ai-start">
         <a href="#Home">Home</a>
@@ -29,14 +94,34 @@
           </div>
           <img src="../../assets/band/ny.jpg" alt="New York" width="100%" />
         </div>
+        <div class="img-coll">
+          <div class="img-text col-12">
+            <h2>Chicago</h2>
+            <p>Thank you, Chicago - A night we won't forget.</p>
+          </div>
+          <img
+            src="../../assets/band/chicago.jpg"
+            alt="New York"
+            width="100%"
+          />
+        </div>
+        <bdiv class="img-coll">
+          <div class="img-text col-12">
+            <h2>Los Angeles</h2>
+            <p>We had the best time playing at Venice Beach!</p>
+          </div>
+          <img src="../../assets/band/la.jpg" alt="Los Angeles" width="100%" />
+        </bdiv>
       </div>
     </section>
     <main id="Band">
       <div class="row jc-center">
         <div class="col-6">
-          <h2 class="col-12 txt-center">THE BAND</h2>
-          <p class="col-12 txt-center">We love music</p>
-          <p class="col-12 txt-justify">
+          <h2 class="col-12 txt-center" style="letter-spacing: 10px">
+            THE BAND
+          </h2>
+          <p class="col-12 txt-center" style="opacity: 0.5">We love music</p>
+          <p class="col-12 txt-justify" style="text-align-last: center">
             We have created a fictional band website. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -93,7 +178,11 @@
               <p><b>New York</b></p>
               <p class="op">Fri 27 Nov 2016</p>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button>Buy Tickets</button>
+              <button
+                onclick=" document.getElementById('modal-pay').style.display = 'block'"
+              >
+                Buy Tickets
+              </button>
             </div>
           </div>
           <div class="col-35 card-city">
@@ -102,7 +191,11 @@
               <p><b>New York</b></p>
               <p class="op">Fri 27 Nov 2016</p>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button>Buy Tickets</button>
+              <button
+                onclick=" document.getElementById('modal-pay').style.display = 'block'"
+              >
+                Buy Tickets
+              </button>
             </div>
           </div>
           <div class="col-35 card-city">
@@ -111,76 +204,87 @@
               <p><b>New York</b></p>
               <p class="op">Fri 27 Nov 2016</p>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button>Buy Tickets</button>
+              <button
+                onclick=" document.getElementById('modal-pay').style.display = 'block'"
+              >
+                Buy Tickets
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="Contact">
       <div class="row">
         <h2 class="col-12 txt-center">CONTACT</h2>
-        <p class="col-12 txt-center">Fan? Drop a note!</p>
+        <p class="col-12 txt-center" style="opacity: 0.5">Fan? Drop a note!</p>
       </div>
+
       <div class="row jc-center">
         <div class="col-7 row">
-        <div class="col-4 row" style="align-content: center;">
-          <div>
-            <i>a</i>
-            <span>Chicago, US</span>
-          </div>
-          <div>
-            <i>a</i>
-            <span> Phone: +00 151515 </span>
-          </div>
-          <div>
-            <i>a</i>
-            <span> Email: mail@mail.com </span>
-          </div>
-        </div>
-        <div class="col-8">
-          <form action="#" method="post">
-            <div class="row jc-between">
-              <input
-                class="col-6"
-                type="text"
-                name="name"
-                id="name"
-                required
-                placeholder="Name"
-              />
-              <input
-                class="col-6"
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder="Email"
-              />
+          <div class="col-4 row" style="align-content: flex-start">
+            <div>
+              <i>a</i>
+              <span>Chicago, US</span>
             </div>
-            <div class="row">
-              <input
-                class="col-12"
-                type="text"
-                name="msg"
-                id="msg"
-                required
-                placeholder="Message"
-              />
+            <div>
+              <i>a</i>
+              <span> Phone: +00 151515 </span>
             </div>
-            <div class="row">
-              <div class="col-12 row jc-end">
-                <button>SEND</button>
+            <div>
+              <i>a</i>
+              <span> Email: mail@mail.com </span>
+            </div>
+          </div>
+
+          <div class="col-8">
+            <form action="#" method="post">
+              <div class="row jc-between">
+                <input
+                  class="col-6"
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Name"
+                />
+                <input
+                  class="col-6"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Email"
+                />
               </div>
-            </div>
-          </form>
+              <div class="row">
+                <input
+                  class="col-12"
+                  type="text"
+                  name="msg"
+                  id="msg"
+                  required
+                  placeholder="Message"
+                />
+              </div>
+              <div class="row">
+                <div class="col-12 row jc-end">
+                  <button>SEND</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-        <img class="img-last" src="../../assets/band/map.jpg" alt="">
+      <img class="img-last" src="../../assets/band/map.jpg" alt="" />
     </section>
+
     <footer></footer>
+
+    <script src="../../script/band/script.js"></script>
   </body>
 </html>

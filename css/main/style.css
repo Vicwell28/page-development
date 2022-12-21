@@ -32,17 +32,17 @@ body {
 }
 
 #btnSubmit {
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    margin-top: 20px;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 #remind {
-    border: none;
-    border-radius: 10px;
+  border: none;
+  border-radius: 10px;
 }
 
 /* :::::::: ::::::::  :::::::: */
@@ -51,8 +51,8 @@ body {
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */
 
-input[type=email],
-input[type=password] {
+input[type="email"],
+input[type="password"] {
   padding: 10px;
   margin: 10px 0px 20px 0px;
   width: 100%;
@@ -142,15 +142,15 @@ input[type=password] {
 }
 
 @keyframes myAnimationColumn {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 50% 0;
-    }
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
 }
 
 .rowColumn {
@@ -175,11 +175,10 @@ h2 {
 }
 
 .mas {
-    padding: 20px;
-    /* background-color: black; */
-    height: 100%;
+  padding: 20px;
+  /* background-color: black; */
+  height: 100%;
 }
-
 
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */

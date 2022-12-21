@@ -34,86 +34,84 @@ html {
 /* :::::::: ::::::::  :::::::: */
 
 .jc-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .jc-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .jc-baseline {
-    justify-content: baseline;
+  justify-content: baseline;
 }
 
 .jc-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .jc-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .jc-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .jc-evenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 /* :::::::: ::::::::  :::::::: */
 /* ::::::::align-items:::::::: */
 /* :::::::: ::::::::  :::::::: */
 
-.ai-center{
-    align-items: center;
+.ai-center {
+  align-items: center;
 }
 
-.ai-start{
-    align-items: flex-start;
+.ai-start {
+  align-items: flex-start;
 }
 
-.ai-end{
-    align-items: flex-end;
+.ai-end {
+  align-items: flex-end;
 }
 
-.ai-stretch{
-    align-items: stretch;
+.ai-stretch {
+  align-items: stretch;
 }
 
-.ai-baseline{
-    align-items: baseline;
+.ai-baseline {
+  align-items: baseline;
 }
-
 
 /* :::::::: ::::::::  :::::::: */
 /* ::::::::align-content:::::::: */
 /* :::::::: ::::::::  :::::::: */
 
 .ac-center {
-    align-content: center;
+  align-content: center;
 }
 
 .ac-start {
-    align-content: flex-start;
+  align-content: flex-start;
 }
 
 .ac-end {
-    align-content: flex-end;
+  align-content: flex-end;
 }
 
 .ac-around {
-    align-content: space-around;
+  align-content: space-around;
 }
 
 .ac-between {
-    align-content: space-between;
+  align-content: space-between;
 }
 
 .ac-stretch {
-    align-content: stretch;
+  align-content: stretch;
 }
-
 
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */
@@ -122,11 +120,11 @@ html {
 /* :::::::: ::::::::  :::::::: */
 
 nav div a {
-    padding: 20px;
-    font-size: 125%;
-    text-decoration: none;
-    color: black;
-    margin: 10px;
+  padding: 20px;
+  font-size: 125%;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
 }
 
 /* :::::::: ::::::::  :::::::: */
@@ -136,75 +134,74 @@ nav div a {
 /* :::::::: ::::::::  :::::::: */
 
 img {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: -8px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: -8px;
 }
-
 
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */
 /* ::::::::   main    :::::::: */
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */
-#about{
-    margin-top: 20px;
-    margin-bottom: 50px;
+#about {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-.txt-center { 
-    text-align: center;
+.txt-center {
+  text-align: center;
 }
 
-.txt-justify{
-    text-align: justify;
+.txt-justify {
+  text-align: justify;
 }
 
 #text-alert {
-    color: red;
-    font-size: 120%;
-    text-align: center;
+  color: red;
+  font-size: 120%;
+  text-align: center;
 }
 
 #img-boy {
-    width: 30%;
-    max-width: 30%;
-    margin: 10px 0 20px 0;
+  width: 30%;
+  max-width: 30%;
+  margin: 10px 0 20px 0;
 }
 
 form {
-    width: 100%;
+  width: 100%;
 }
 
 form input {
-    margin: 5px 0 20px 0;
+  margin: 5px 0 20px 0;
 }
 
 form label {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 form input {
-    padding: 10px;
-    border: 1px solid rgb(128, 128, 128,0.5);
+  padding: 10px;
+  border: 1px solid rgb(128, 128, 128, 0.5);
 }
 
 button {
-    padding: 12px;
-    border: none;
-    background-color: gray;
-    color: white;
+  padding: 12px;
+  border: none;
+  background-color: gray;
+  color: white;
 }
 
 button:hover {
-    color: black;
-    background-color: rgb(128, 128, 128,0.5);
+  color: black;
+  background-color: rgb(128, 128, 128, 0.5);
 }
 
 a:hover {
-    background-color: rgb(128, 128, 128,0.5);
-    border-radius: 20px;
+  background-color: rgb(128, 128, 128, 0.5);
+  border-radius: 20px;
 }
 
 /* :::::::: ::::::::  :::::::: */
@@ -215,9 +212,9 @@ a:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 425px) {
-    nav div {
-        justify-content: center !important;
-    }
+  nav div {
+    justify-content: center !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

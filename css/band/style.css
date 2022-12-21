@@ -11,12 +11,13 @@ body {
   padding: 0;
   margin: 0;
   color: white;
-} 
+}
 
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-  
+
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: header    :::::::: */
@@ -27,40 +28,38 @@ header {
   height: 200px;
 }
 
-
 .dates {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 div.dates div span {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 .card-bottom {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-
 #Band {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .card-city {
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    transition: all 0.5s;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
 }
 
 .card-city:hover {
-    /* background-color: black; */
-    transform: scale(1.05 ,1.05);
-    box-shadow: 5px 5px 10px red;
+  /* background-color: black; */
+  transform: scale(1.05, 1.05);
+  box-shadow: 5px 5px 10px white;
 }
 
 .content-city-card {
-    padding: 5px;
+  padding: 5px;
 }
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */
@@ -68,7 +67,7 @@ div.dates div span {
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */
 .op {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 nav {
   position: sticky;
@@ -109,10 +108,27 @@ footer {
   text-align: center;
 }
 
-.card-city  img {
-    width: 100%;
-    object-fit: contain;
+.card-city img {
+  width: 100%;
+  object-fit: contain;
 }
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+#modal-pay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */
 /* ::::::::   flex    :::::::: */
@@ -128,7 +144,6 @@ footer {
 .jc-center {
   justify-content: center;
 }
-
 
 .jc-start {
   justify-content: flex-start;
@@ -170,65 +185,64 @@ footer {
   width: 100%;
 }
 
-
 .txt-center {
-    text-align: center;
+  text-align: center;
 }
 
 .txt-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 .card {
-    margin: 20px;
-    padding: 20px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .card img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .card-city img {
-    border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .img-last {
-    width: 100%;
+  width: 100%;
 }
 
 span {
-    padding: 10px;
-    margin: 5px;
+  padding: 10px;
+  margin: 5px;
 }
 
 .border-radius {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 span.alert {
-    background-color: red;
-    color: white;
-    border-radius: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
 }
 
-#Contact{
-    margin-top: 50px;
-    padding: 20px 0 20px 0;
-    background-color: white;
-    color: black;
+#Contact {
+  margin-top: 50px;
+  padding: 20px 0 20px 0;
+  background-color: white;
+  color: black;
 }
 
 input {
-    padding: 10px;
-    margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 button {
-    border: none;
-    padding: 10px;
-    background-color: black;
-    border-radius: 10px;
-    color: white;
+  border: none;
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
 }
 /* :::::::: ::::::::  :::::::: */
 /* :::::::: ::::::::  :::::::: */
@@ -241,8 +255,6 @@ button {
   body {
     background-color: aqua;
   }
-
- 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -250,12 +262,10 @@ button {
   body {
     background-color: black;
   }
-  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
   .row {
     flex-direction: row;
   }
@@ -304,9 +314,9 @@ button {
   .row {
     flex-direction: row;
   }
-.col-35{
+  .col-35 {
     width: 30%;
-}
+  }
   .col-1 {
     width: 8.33%;
   }

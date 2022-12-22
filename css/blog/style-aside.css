@@ -1,0 +1,112 @@
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+.aside {
+  padding: 20px;
+}
+
+
+.card-shadow {
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 7px 7px 14px #868686, -5px -5px 14px #868686;
+    overflow: hidden;
+
+    margin-bottom: 50px;
+}
+
+
+.profile img {
+  width: 100%;
+}
+
+.profile .body-profile {
+  padding: 10px;
+}
+
+.profile .name-profile {
+  font-weight: 600;
+  font-size: 130%;
+  margin-bottom: 10px;
+}
+
+.profile .des-profile {
+  text-align: justify;
+}
+
+
+
+
+
+
+.popular-post-body {
+    padding: 10px;
+}
+
+.posts-post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.popular-post-body .posts-post .post-img {
+    width: 15%;
+}
+
+.popular-post-body .posts-post .post-img img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.popular-post-body .posts-post .post-text {
+    width: 80%;
+    padding: 10px;
+}
+
+.title-des-post {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+
+.title-post {
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+    font-size: 120%;
+}
+
+.tag-title{
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+    font-size: 120%;
+}
+
+.tags-body p {
+    padding: 5px 10px;
+    font-size: 80%;
+    background-color: rgb(134, 134, 134,0.5);
+    border-radius: 5px;
+}
+
+.tags-body p:first-child {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.tags-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}

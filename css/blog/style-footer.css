@@ -1,0 +1,37 @@
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+
+footer {
+    height: 150px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+}
+
+footer button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+footer button:first-child {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+footer button:last-child {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+
+footer div {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+}

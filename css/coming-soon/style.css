@@ -1,0 +1,76 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  color: white;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.img-main {
+  background-image: url("https://www.w3schools.com/w3images/forestbridge.jpg");
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  font-size: 150%;
+}
+
+.logo p {
+  margin: 0;
+}
+
+.soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+}
+
+.soon hr {
+  width: 50%;
+}
+
+.soon p#coming-soon {
+  opacity: 0;
+  animation: animationX 3s normal 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.footer {
+  position: absolute;
+  left: 1%;
+  bottom: 1%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+#coming-soon {
+  font-size: 6vw;
+  margin: 0;
+}
+
+@keyframes animationX {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

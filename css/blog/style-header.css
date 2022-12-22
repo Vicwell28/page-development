@@ -1,0 +1,28 @@
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::  header   :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+header {
+  height: 150px;
+}
+
+
+.txt-center{
+    text-align: center;
+}
+
+.blog {
+    padding: 20px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    font-size: 200%;
+}
+
+.name {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}

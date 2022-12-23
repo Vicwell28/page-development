@@ -1,0 +1,248 @@
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  [class*="col-"] {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* :::::::: ::::::::  :::::::: */
+  /* ::::::::justify-content:::::::: */
+  /* :::::::: ::::::::  :::::::: */
+  
+  .jc-start {
+    justify-content: flex-start;
+  }
+  
+  .jc-end {
+    justify-content: flex-end;
+  }
+  
+  .jc-baseline {
+    justify-content: baseline;
+  }
+  
+  .jc-center {
+    justify-content: center;
+  }
+  
+  .jc-around {
+    justify-content: space-around;
+  }
+  
+  .jc-between {
+    justify-content: space-between;
+  }
+  
+  .jc-evenly {
+    justify-content: space-evenly;
+  }
+  
+  /* :::::::: ::::::::  :::::::: */
+  /* ::::::::align-items:::::::: */
+  /* :::::::: ::::::::  :::::::: */
+  
+  .ai-center {
+    align-items: center;
+  }
+  
+  .ai-start {
+    align-items: flex-start;
+  }
+  
+  .ai-end {
+    align-items: flex-end;
+  }
+  
+  .ai-stretch {
+    align-items: stretch;
+  }
+  
+  .ai-baseline {
+    align-items: baseline;
+  }
+  
+  /* :::::::: ::::::::  :::::::: */
+  /* ::::::::align-content:::::::: */
+  /* :::::::: ::::::::  :::::::: */
+  
+  .ac-center {
+    align-content: center;
+  }
+  
+  .ac-start {
+    align-content: flex-start;
+  }
+  
+  .ac-end {
+    align-content: flex-end;
+  }
+  
+  .ac-around {
+    align-content: space-around;
+  }
+  
+  .ac-between {
+    align-content: space-between;
+  }
+  
+  .ac-stretch {
+    align-content: stretch;
+  }
+  
+  /* :::::::: ::::::::  :::::::: */
+  /* :::::::: ::::::::  :::::::: */
+  /* ::::::::   media    :::::::: */
+  /* :::::::: ::::::::  :::::::: */
+  /* :::::::: ::::::::  :::::::: */
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 425px) {
+    nav div {
+      justify-content: center !important;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 500px) {
+    .row {
+        flex-direction: row;
+      }
+    
+      .col-1 {
+          width: 25%;
+      }
+      .col-2 {
+          width: 25%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+          width: 41.66%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+          width: 41.66%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+          width: 75%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+          width: 100%;
+      }
+      .col-11 {
+          width: 100%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 800px) {
+    .row {
+      flex-direction: row;
+    }
+  
+    .col-1 {
+        width: 25%;
+    }
+    .col-2 {
+        width: 25%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+        width: 41.66%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+        width: 41.66%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+        width: 75%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-10 {
+        width: 100%;
+    }
+    .col-11 {
+        width: 100%;
+    }
+    .col-12 {
+      width: 100%;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 992px) {
+    .row {
+      flex-direction: row;
+    }
+    .col-35 {
+      width: 30%;
+    }
+    .col-1 {
+      width: 8.33%;
+    }
+    .col-2 {
+      width: 16.66%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.33%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+      width: 66.66%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-10 {
+      width: 83.33%;
+    }
+    .col-11 {
+      width: 91.66%;
+    }
+    .col-12 {
+      width: 100%;
+    }
+  }

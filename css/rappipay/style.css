@@ -1,0 +1,160 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  z-index: 10;
+}
+
+nav div h2 {
+  font-weight: 400;
+  letter-spacing: -2px;
+  font-size: 200%;
+  padding: 10px;
+}
+
+nav div a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: -1px;
+  font-size: 95%;
+}
+
+nav div button {
+  margin-left: 10px;
+  border: none;
+  padding: 10px 40px 10px 40px;
+  background-color: #6168db;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+nav div button:hover {
+  opacity: 0.8;
+}
+
+button {
+  border: none;
+  padding: 15px 60px 15px 60px;
+  background-color: #6168db;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.text-orange {
+  color: tomato;
+}
+
+section div h2 {
+  font-weight: 600;
+  font-size: 400%;
+  letter-spacing: -3px;
+  width: 78%;
+}
+
+section div p {
+  text-align: justify;
+  font-weight: 600;
+  width: 78%;
+}
+
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+main {
+  background-color: rgb(0, 0, 0, 0.3);
+  padding: -10px;
+}
+
+.img img {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  position: sticky;
+  position: -webkit-sticky;
+  top: -500px;
+}
+
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+footer {
+  background-color: rgb(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+footer div div h2 {
+  font-weight: 400;
+  letter-spacing: -2px;
+  font-size: 200%;
+  padding: 10px;
+}
+
+footer div div ul {
+  list-style-type: none;
+}
+
+footer div div ul li {
+  margin-bottom: 15px;
+}
+
+footer div div ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 68%;
+  font-weight: bold;
+}
+
+footer div div ul li:nth-child(1) {
+  font-size: 120%;
+  margin-bottom: 25px;
+}
+
+footer div p {
+  font-size: 78%;
+  color: rgb(0, 0, 0, 0.8);
+  text-align: justify;
+}
+
+footer div:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.text-padding {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

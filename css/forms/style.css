@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("../../assets/forms/Animated.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-form {
+  height: 100%;
+}
+
+.card-body {
+  background-color: white;
+  height: 90%;
+  border-radius: 40px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #5a5a5a;
+  padding: 30px;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+form * {
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+}
+
+form h2,
+form p {
+  text-align: center;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 105%;
+  letter-spacing: 2px;
+  background-color: #0E2A47;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  padding: 12px;
+}
+
+
+.login {
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+a{
+    margin-top: 40px;
+    text-decoration: none;
+    color: #0E2A47;
+}

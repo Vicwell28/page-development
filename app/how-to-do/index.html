@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to do</title>
+
+    <style>
+      body {
+        padding: 50px;
+      }
+
+      .input-box {
+        position: relative;
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+
+      .input-box input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+      }
+
+      .input-box span {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        transition: all 0.3s;
+        background-color: white;
+      }
+
+
+      
+
+      input:focus {
+        outline: none !important;
+      }
+
+      input:focus + span {
+        top: 0;
+        left: 15px;
+        z-index: 2;
+      }
+
+      input:active + span {
+        background-color: black;
+      }
+
+
+     
+      input[type="text"] {
+        border: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-box">
+      <input type="text" value="" />
+      <span>Nombre</span>
+    </div>
+  </body>
+</html>

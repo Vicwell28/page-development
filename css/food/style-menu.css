@@ -1,0 +1,34 @@
+#menu {
+    padding: 10px;
+}
+
+main {
+    padding: 10px;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card-img img {
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-clip: content-box;
+    transition: all 0.5s;
+}
+
+.card-img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover .card-img img{
+    background-color: black;
+    transform: scale(1.1);
+}

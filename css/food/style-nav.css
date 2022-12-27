@@ -1,0 +1,41 @@
+nav {
+    height: 60px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding: 10px 20px ;
+}
+
+button {
+    padding: 10px;
+}
+
+nav div p {
+    font-size: 150%;
+}
+
+
+.nav-burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+}
+
+.nav-burger a {
+    font-size: 150%;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.nav-burger a:hover {
+  background-color: black;
+  color: white;
+}
+
+.nav-burger {
+    display: flex;
+    flex-direction: column;
+}

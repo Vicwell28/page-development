@@ -11,21 +11,29 @@
     <link rel="stylesheet" href="../../css/food/style-about.css" />
     <link rel="stylesheet" href="../../css/food/style-footer.css" />
     <link rel="stylesheet" href="../../css/food/style-nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- nav-burger  -->
 
-    <div class="nav-burger" style="display: none">
-      <a href="">Close</a>
+    <div id="nav-burger">
+      <div class="nav-burger">
+      <a onclick="document.getElementById('nav-burger').style.display = 'none'">Close</a>
       <a href="#menu">Food</a>
       <a href="#about">About</a>
+      </div>
     </div>
 
     <!-- nav  -->
 
     <nav class="row jc-center ai-center">
       <div class="col-11 row jc-between ai-center">
-        <button>x</button>
+        <button onclick="document.getElementById('nav-burger').style.display = 'block'" >☰</button>
         <p>My food</p>
         <p>Mail</p>
       </div>
@@ -140,13 +148,12 @@
         </div>
         <!-- END CARD  -->
       </section>
-      <hr />
       <section id="about" class="col-11">
         <p class="title">About Me, The Food Man</p>
         <img src="../../assets/food/chef.jpg" alt="" />
         <p>I am Who I Am!</p>
         <p>With Passion For Real, Good Food</p>
-        <p>
+        <p class="col-8" style="text-align: center;">
           Just me, myself and I, exploring the universe of unknownment. I have a
           heart of love and an interest of lorem ipsum and mauris neque quam
           blog. I want to share my world with you. Praesent tincidunt sed tellus
@@ -177,6 +184,24 @@
         </div>
         <div class="col-4">
           <p class="title">BLOG POSTS</p>
+          <div class="list-post" style="display: flex;">
+            <div class="img-body" style="width: 20%;">
+              <img src="../../assets/food/workshop.jpg" alt="" style="width: 100%; background-position: center; background-size: cover; border-radius: 10px;">
+            </div>
+            <div class="txt-body" style="width: 80%; padding: 5px; display: flex; flex-direction: column; justify-content: center; border-radius: 10px;">
+              <p style="font-size: 110%; font-weight: 600;">Lorem</p>
+              <p>Sed mattis nunc</p>
+            </div>
+          </div>
+          <div class="list-post" style="display: flex;">
+            <div class="img-body" style="width: 20%;">
+              <img src="../../assets/food/workshop.jpg" alt="" style="width: 100%; background-position: center; background-size: cover;">
+            </div>
+            <div class="txt-body" style="width: 80%; padding: 5px; display: flex; flex-direction: column; justify-content: center;">
+              <p style="font-size: 110%; font-weight: 600;">Lorem</p>
+              <p>Sed mattis nunc</p>
+            </div>
+          </div>
         </div>
         <div class="col-4">
           <p class="title">POPULAR TAGS</p>

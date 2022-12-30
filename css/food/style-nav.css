@@ -1,33 +1,54 @@
 nav {
-    height: 60px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    padding: 10px 20px ;
+  height: 60px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding: 10px 20px;
+  z-index: 2;
+  background-color: white;
 }
 
 button {
-    padding: 10px;
+  padding: 10px;
 }
 
 nav div p {
-    font-size: 150%;
+  font-size: 150%;
 }
 
-
 .nav-burger {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  z-index: 3;
+  background-color: white;
+  box-shadow: 1px 1px 5px black;
+}
+
+#nav-burger {
+  display: none;
+  animation: animateleft 0.4s;
+  position: relative;
+}
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
     left: 0;
-    width: 30%;
-    height: 100%;
+    opacity: 1;
+  }
 }
 
 .nav-burger a {
-    font-size: 150%;
-    text-decoration: none;
-    color: black;
-    padding: 20px;
+  font-size: 150%;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
 }
 
 .nav-burger a:hover {
@@ -36,6 +57,6 @@ nav div p {
 }
 
 .nav-burger {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

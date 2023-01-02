@@ -1,0 +1,41 @@
+#img div img {
+  width: 100%;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#img div {
+  position: relative;
+}
+
+#img div div {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: white;
+}
+
+#jane {
+  font-size: 200%;
+}
+
+#fas-blg {
+  font-size: 400%;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+#img div div button {
+  border: none;
+  padding: 10px 25px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+#img div div * {
+    margin-top: 10px;
+}

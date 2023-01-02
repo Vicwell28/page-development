@@ -1,0 +1,21 @@
+header div {
+    padding: 60px;
+    text-align: center;
+}
+
+header div h1 {
+    font-size: 300%;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+header div p {
+    letter-spacing: -0.5px;
+}
+
+header div p span {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 8px;
+}

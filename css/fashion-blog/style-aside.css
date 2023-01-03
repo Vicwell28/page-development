@@ -1,18 +1,37 @@
 #aside {
-    padding: 20px;
+  padding: 20px;
 }
 
-.card-name .card-name-img img{
-
-    width: 100%;
+.card-name .card-name-img img {
+  width: 100%;
 }
 
 .card-name-body {
-    padding: 10px;
+  padding: 10px;
 }
 
-.card-name-body *{
-    margin-bottom: 6px;
+.card-name-body * {
+  margin-bottom: 6px;
+}
+
+.card-blog {
+  border-radius: 44px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 50px #5a5a5a, -10px -10px 50px #5a5a5a;
+}
+
+
+.card-name, 
+.popular-post, 
+.advertise, 
+.tags, 
+.inspiration, 
+.follow-me,
+.subscribe {
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 50px #5a5a5a, -10px -10px 50px #5a5a5a;
+    overflow: hidden;
 }
 
 
@@ -20,168 +39,146 @@
 /* popular list*/
 
 #aside > div {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.popular-post .popular-post-title{
-    padding: 20px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-weight: 600;
-    font-size: 120%;
+.popular-post .popular-post-title {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 120%;
 }
 
 .popular-post-body {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    border-bottom: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-bottom: 1px solid black;
 }
 
 .popular-post-body:last-child {
-    border: none;
+  border: none;
 }
 
 .popular-post-body .popular-post-list {
-    width: 15%;
+  width: 15%;
 }
 
-.popular-post-body .popular-post-list img{
-    width: 100%;
+.popular-post-body .popular-post-list img {
+  width: 100%;
 }
 
 .popular-post-text {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.popular-post-text p:nth-child(1){
-    font-weight: 600;
-    font-size: 110%;
+.popular-post-text p:nth-child(1) {
+  font-weight: 600;
+  font-size: 110%;
 }
-
 
 .inspiration-body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .inspiration-img {
-    width: 50%;
-    padding: 5px 10px;
+  width: 50%;
+  padding: 5px 10px;
 }
 
 .inspiration-img img {
-    width: 100%;
+  width: 100%;
 }
 
-
-
 .tags-title {
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 110%;
-    background-color: black;
-    color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 110%;
+  background-color: black;
+  color: white;
 }
 
 .tags-body {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-
-
 .advertise-title {
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 110%;
-    background-color: black;
-    color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 110%;
+  background-color: black;
+  color: white;
 }
 
 .advertise-body {
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.follow-me-title{
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 110%;
-    background-color: black;
-    color: white;
+.follow-me-title {
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 110%;
+  background-color: black;
+  color: white;
 }
 
-
-.inspiration-title{
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 110%;
-    background-color: black;
-    color: white;
+.inspiration-title {
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 110%;
+  background-color: black;
+  color: white;
 }
 
-
-
-.subscribe-title{
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 110%;
-    background-color: black;
-    color: white;
+.subscribe-title {
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 110%;
+  background-color: black;
+  color: white;
 }
 
-.subscribe-body *{
-    margin-bottom: 10px;
+.subscribe-body * {
+  margin-bottom: 10px;
 }
 
 .subscribe-body {
-    padding: 10px;
+  padding: 10px;
 }
 
 .subscribe-body form input {
-    width: 100%;
-    padding: 10px;
-    border: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
 }
 
 .subscribe-body form input:focus {
-    
-    outline: none;
+  outline: none;
 }
 
-#footer {
-    padding: 20px;
-    border: none;
+input {
+  border-radius: 10px;
 }
-
-#footer div:first-child a{
-    background-color: black;
-    color: white;
-    padding: 15px 30px;
-    display: inline-block;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-}
-
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }

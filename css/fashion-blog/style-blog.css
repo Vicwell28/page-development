@@ -45,6 +45,7 @@ footer {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+    gap: 10px;
 
 }
 
@@ -61,4 +62,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+button:active {
+    transform: translateY(2px);
 }

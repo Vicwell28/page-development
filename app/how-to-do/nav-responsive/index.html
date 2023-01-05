@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar Responsive</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(0, 0, 0, 0.1);
+      }
+
+      nav {
+        padding: 5px;
+      }
+
+      main {
+        padding: 20px;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .icon .bar {
+        width: 30px;
+        height: 5px;
+        background-color: red;
+        margin: 4px 0;
+      }
+
+      .icon {
+        display: inline-block;
+      }
+
+      .img {
+        display: inline-block;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      nav div a {
+        display: block;
+        padding: 10px;
+      }
+
+      nav div a:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div style="width: 50%; display: flex; align-items: center">
+        <a href="#home" class="img">Home</a>
+      </div>
+      <div style="width: 50%; display: flex; justify-content: flex-end">
+        <a href="#home" id="icon" class="icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </a>
+      </div>
+      <div style="width: 100%" class="menu">
+        <a href="#home">Home</a>
+        <a href="#home">Home</a>
+        <a href="#home">Home</a>
+        <a href="#home">Home</a>
+        <a href="#home">Home</a>
+      </div>
+    </nav>
+    <main>
+      <h2>Responsive Topnav Example</h2>
+      <p>Resize the browser window to see how it works.</p>
+    </main>
+
+    <script>
+      let menu = document.getElementsByClassName("menu")[0];
+
+      document.getElementById("icon").addEventListener("click", () => {
+        console.log("se esta ejecutando");
+        menu.classList.toggle("show");
+        console.log(menu);
+      });
+    </script>
+  </body>
+</html>

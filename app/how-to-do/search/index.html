@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(0, 0, 0, 0.1);
+      }
+
+      body,
+      html,
+      main {
+        height: 100%;
+      }
+
+      main {
+        display: flex;
+        gap: 5px;
+        padding: 20px;
+      }
+
+      .search-main {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .search-main * {
+        width: 100%;
+        padding: 5px;
+      }
+
+      .search-body {
+        width: 70%;
+        height: 100%;
+        overflow-y: auto;
+      }
+
+      .search-main-body {
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="search-main">
+        <h1>menu</h1>
+        <div>
+          <input
+            type="text"
+            name="mySearch"
+            id="mySearch"
+            placeholder="text..."
+            onkeyup="myfunction()"
+          />
+        </div>
+        <div class="search-main-body">
+          <ul id="myMenu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Node.js</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Node.js</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Node.js</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Node.js</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="search-body">
+        <p>
+            The history of programming languages spans from documentation of early mechanical computers to modern tools for software development. Early programming languages were highly specialized, relying on mathematical notation and similarly obscure syntax.[1] Throughout the 20th century, research in compiler theory led to the creation of high-level programming languages, which use a more accessible syntax to communicate instructions.
+
+            The first high-level programming language was Plankalkül, created by Konrad Zuse between 1942 and 1945.[2] The first high-level language to have an associated compiler was created by Corrado Böhm in 1951, for his PhD thesis.[3] The first commercially available language was FORTRAN (FORmula TRANslation), developed in 1956 (first manual appeared in 1956, but first developed in 1954) by a team led by John Backus at IBM.
+
+            During 1842–1849, Ada Lovelace translated the memoir of Italian mathematician Luigi Menabrea about Charles Babbage's newest proposed machine: the Analytical Engine; she supplemented the memoir with notes that specified in detail a method for calculating Bernoulli numbers with the engine, recognized by most of historians as the world's first published computer program.[4]
+
+The first computer codes were specialized for their applications: e.g., Alonzo Church was able to express the lambda calculus in a formulaic way and the Turing machine was an abstraction of the operation of a tape-marking machine.
+
+Jacquard Looms and Charles Babbage's Difference Engine both had simple languages[citation needed] for describing the actions that these machines should perform hence they were the creators of the first programming language.
+
+In the 1940s, the first recognizably modern electrically powered computers were created. The limited speed and memory capacity forced programmers to write hand-tuned assembly language programs. It was eventually realized that programming in assembly language required a great deal of intellectual effort.[citation needed]
+
+An early proposal for a high-level programming language was Plankalkül, developed by Konrad Zuse for his Z1 computer between 1942 and 1945 but not implemented at the time.[5]
+
+The first functioning programming languages designed to communicate instructions to a computer were written in the early 1950s. John Mauchly's Short Code, proposed in 1949, was one of the first high-level languages ever developed for an electronic computer.[6] Unlike machine code, Short Code statements represented mathematical expressions in understandable form. However, the program had to be interpreted into machine code every time it ran, making the process much slower than running the equivalent machine code.
+
+In the early 1950s, Alick Glennie developed Autocode, possibly the first compiled programming language, at the University of Manchester. In 1954, a second iteration of the language, known as the "Mark 1 Autocode," was developed for the Mark 1 by R. A. Brooker. Brooker also developed an autocode for the Ferranti Mercury in the 1950s in conjunction with the University of Manchester. The version for the EDSAC 2 was devised by Douglas Hartree of University of Cambridge Mathematical Laboratory in 1961. Known as EDSAC 2 Autocode, it was a straight development from Mercury Autocode adapted for local circumstances and was noted for its object code optimization and source-language diagnostics which were advanced for the time. A contemporary but separate thread of development, Atlas Autocode was developed for the University of Manchester Atlas 1 machine.
+
+In 1954, FORTRAN was invented at IBM by a team led by John Backus; it was the first widely used high-level general purpose programming language to have a functional implementation, as opposed to just a design on paper.[7][8] When FORTRAN was first introduced, it was viewed with skepticism due to bugs, delays in development, and the comparative efficiency of "hand-coded" programs written in assembly.[9] However, in a hardware market that was rapidly evolving; the language eventually became known for its efficiency. It is still a popular language for high-performance computing[10] and is used for programs that benchmark and rank the world's fastest supercomputers.[11]
+
+Another early programming language was devised by Grace Hopper in the US, called FLOW-MATIC. It was developed for the UNIVAC I at Remington Rand during the period from 1955 until 1959. Hopper found that business data processing customers were uncomfortable with mathematical notation, and in early 1955, she and her team wrote a specification for an English programming language and implemented a prototype.[12] The FLOW-MATIC compiler became publicly available in early 1958 and was substantially complete in 1959.[13] Flow-Matic was a major influence in the design of COBOL, since only it and its direct descendant AIMACO were in actual use at the time.[14]
+
+Other languages still in use today include LISP (1958), invented by John McCarthy and COBOL (1959), created by the Short Range Committee. Another milestone in the late 1950s was the publication, by a committee of American and European computer scientists, of "a new language for algorithms"; the ALGOL 60 Report (the "ALGOrithmic Language"). This report consolidated many ideas circulating at the time and featured three key language innovations:
+
+nested block structure: code sequences and associated declarations could be grouped into blocks without having to be turned into separate, explicitly named procedures;
+lexical scoping: a block could have its own private variables, procedures and functions, invisible to code outside that block, that is, information hiding.
+Another innovation, related to this, was in how the language was described:
+
+a mathematically exact notation, Backus–Naur form (BNF), was used to describe the language's syntax. Nearly all subsequent programming languages have used a variant of BNF to describe the context-free portion of their syntax.
+Algol 60 was particularly influential in the design of later languages, some of which soon became more popular. The Burroughs large systems were designed to be programmed in an extended subset of Algol.
+
+Algol's key ideas were continued, producing ALGOL 68:
+
+syntax and semantics became even more orthogonal, with anonymous routines, a recursive typing system with higher-order functions, etc.;
+not only the context-free part, but the full language syntax and semantics were defined formally, in terms of Van Wijngaarden grammar, a formalism designed specifically for this purpose.
+Algol 68's many little-used language features (for example, concurrent and parallel blocks) and its complex system of syntactic shortcuts and automatic type coercions made it unpopular with implementers and gained it a reputation of being difficult. Niklaus Wirth actually walked out of the design committee to create the simpler Pascal language.
+        </p>
+      </div>
+    </main>
+
+    <script>
+      function myfunction() {
+
+        var input, filter, ul, li, a, i;
+
+        input = document.getElementById("mySearch");
+
+        filter = input.value.toUpperCase();
+
+
+        ul = document.getElementById("myMenu");
+
+        li = ul.getElementsByTagName("li");
+
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

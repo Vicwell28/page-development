@@ -1,0 +1,24 @@
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+#slide {
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+
+#slide img {
+    width: 100%;
+}
+
+#slide p {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 300%;
+    font-weight: 600;
+}
+

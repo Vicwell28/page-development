@@ -1,0 +1,22 @@
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   flex    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+#menu {
+    padding: 20px 60px;
+}
+
+.menu-body-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+}
+
+.menu-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

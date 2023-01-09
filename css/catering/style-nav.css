@@ -1,0 +1,42 @@
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* ::::::::   nav    :::::::: */
+/* :::::::: ::::::::  :::::::: */
+/* :::::::: ::::::::  :::::::: */
+
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    color: black;
+}
+
+nav div.nav-row {
+    display: flex;
+    padding: 10px;
+}
+
+nav div.nav-col-3 {
+    width: 30%;
+    display: flex;
+}
+
+nav div.nav-col-9 {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+nav div div a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+}
+
+nav div div a:hover {
+    background-color: gray;
+    color: white;
+}

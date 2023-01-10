@@ -20,3 +20,12 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.menu-title {
+    font-size: 200%;
+    font-weight: 600;
+}
+
+.body-title{
+    font-size: 150%;
+}

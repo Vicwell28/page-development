@@ -14,9 +14,15 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 20px;
 }
 
 .slide-title {
     font-weight: 600;
     font-size: 200%;
+}
+
+.about-img {
+    padding: 20px;
+    width: 100%;
 }

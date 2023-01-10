@@ -12,10 +12,19 @@
     background-color: rgb(0, 0, 0, 0.1);
 }
 
-html {
+html {  
     scroll-behavior: smooth;
 }
 
 footer{
     padding: 20px 60px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer p a {
+    text-decoration: none;
 }

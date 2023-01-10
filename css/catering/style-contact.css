@@ -17,3 +17,18 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.contact-form input {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.contact-form input:focus {
+    outline: none;
+}
+
+.contact-title {
+    font-size: 200%;
+    font-weight: 600;
+}

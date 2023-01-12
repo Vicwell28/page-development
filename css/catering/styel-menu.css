@@ -29,3 +29,8 @@
 .body-title{
     font-size: 150%;
 }
+
+#menu div div img{
+    width: 100%;
+    background-color: black;
+}

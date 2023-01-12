@@ -32,3 +32,7 @@
     font-size: 200%;
     font-weight: 600;
 }
+
+input {
+    border: 1px solid black !important;
+}

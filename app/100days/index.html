@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100 days</title>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: rgb(0, 0, 0, 0.2);
+      }
+
+      nav {
+        position: fixed;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 10px;
+      }
+
+      nav ul li a {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      #one {
+        background-color: red;
+      }
+
+      #two {
+        background-color: aqua;
+      }
+
+      #three {
+        background-color: coral;
+      }
+
+      #four {
+        background-color: darkcyan;
+      }
+
+      footer {
+        height: 300px;
+        background-color: white;
+      }
+
+      header {
+        height: 200px;
+        background-color: white;
+      }
+
+      .title {
+        font-weight: 600;
+        font-size: 200%;
+        text-align: center;
+      }
+
+      .days-proyects {
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .card-days {
+        width: 25%;
+        padding: 15px;
+      }
+
+      .card-days img {
+        width: 100%;
+        height: 250px;
+      }
+
+      .btn-card-days {
+        position: relative;
+        padding: 10px 40px 20px 40px;
+        background-color: darkgreen;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .btn-card-days::after {
+        content: "";
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 85%;
+        border-radius: 10px;
+        background-color: rgb(154, 205, 50, 0.2);
+      }
+
+      .btn-card-days:active::after {
+        transform: translateY(2px);
+        top: 0;
+        height: 95%;
+      }
+
+      .card-days-body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-days-body div {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+      }
+
+      .card-days div {
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#one"></a></li>
+        <li><a href="#two"></a></li>
+        <li><a href="#three"></a></li>
+        <li><a href="#four"></a></li>
+      </ul>
+    </nav>
+    <header></header>
+    <main>
+      <section id="one">
+        <p class="title">About me</p>
+      </section>
+      <section id="two">
+        <p class="title">Some projects</p>
+      </section>
+      <section id="three">
+        <p class="title">100 days</p>
+
+        <div class="days-proyects">
+          <!-- card-days  -->
+          <div class="card-days">
+            <div>
+              <div class="card-days-img">
+                <img src="../../assets/food/salmon.jpg" alt="food" />
+              </div>
+              <div class="card-days-body">
+                <p class="card-days-title">Day One</p>
+                <p class="card-days-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  quod vel repellat, consequuntur ea maiores atque officia
+                  veniam ex suscipit, similique dolor quidem accusamus at,
+                  obcaecati ullam asperiores deserunt facilis!
+                </p>
+                <div>
+                  <a class="btn-card-days" href="./index.html">Ver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end-card-days  -->
+
+          <!-- card-days  -->
+          <div class="card-days">
+            <div class="card-days-img">
+              <img src="../../assets/food/salmon.jpg" alt="food" />
+            </div>
+            <div class="card-days-body">
+              <p class="card-days-title">Day One</p>
+              <p class="card-days-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quod vel repellat, consequuntur ea maiores atque officia veniam
+                ex suscipit, similique dolor quidem accusamus at, obcaecati
+                ullam asperiores deserunt facilis!
+              </p>
+              <div>
+                <a href="./index.html">Ver</a>
+              </div>
+            </div>
+          </div>
+          <!-- end-card-days  -->
+
+          <!-- card-days  -->
+          <div class="card-days">
+            <div class="card-days-img">
+              <img src="../../assets/food/salmon.jpg" alt="food" />
+            </div>
+            <div class="card-days-body">
+              <p class="card-days-title">Day One</p>
+              <p class="card-days-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quod vel repellat, consequuntur ea maiores atque officia veniam
+                ex suscipit, similique dolor quidem accusamus at, obcaecati
+                ullam asperiores deserunt facilis!
+              </p>
+              <div>
+                <a href="./index.html">Ver</a>
+              </div>
+            </div>
+          </div>
+          <!-- end-card-days  -->
+
+          <!-- card-days  -->
+          <div class="card-days">
+            <div class="card-days-img">
+              <img src="../../assets/food/salmon.jpg" alt="food" />
+            </div>
+            <div class="card-days-body">
+              <p class="card-days-title">Day One</p>
+              <p class="card-days-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quod vel repellat, consequuntur ea maiores atque officia veniam
+                ex suscipit, similique dolor quidem accusamus at, obcaecati
+                ullam asperiores deserunt facilis!
+              </p>
+              <div>
+                <a href="./index.html">Ver</a>
+              </div>
+            </div>
+          </div>
+          <!-- end-card-days  -->
+
+          <!-- card-days  -->
+          <div class="card-days">
+            <div class="card-days-img">
+              <img src="../../assets/food/salmon.jpg" alt="food" />
+            </div>
+            <div class="card-days-body">
+              <p class="card-days-title">Day One</p>
+              <p class="card-days-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quod vel repellat, consequuntur ea maiores atque officia veniam
+                ex suscipit, similique dolor quidem accusamus at, obcaecati
+                ullam asperiores deserunt facilis!
+              </p>
+              <div>
+                <a href="./index.html">Ver</a>
+              </div>
+            </div>
+          </div>
+          <!-- end-card-days  -->
+
+          <!-- card-days  -->
+          <div class="card-days">
+            <div class="card-days-img">
+              <img src="../../assets/food/salmon.jpg" alt="food" />
+            </div>
+            <div class="card-days-body">
+              <p class="card-days-title">Day One</p>
+              <p class="card-days-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quod vel repellat, consequuntur ea maiores atque officia veniam
+                ex suscipit, similique dolor quidem accusamus at, obcaecati
+                ullam asperiores deserunt facilis!
+              </p>
+              <div>
+                <a href="./index.html">Ver</a>
+              </div>
+            </div>
+          </div>
+          <!-- end-card-days  -->
+        </div>
+      </section>
+      <section id="four"></section>
+    </main>
+    <footer></footer>
+
+    <script>
+      document.getElementById("one").style.height = `${window.innerHeight}px`;
+      document.getElementById("two").style.height = `${window.innerHeight}px`;
+      //   document.getElementById("three").style.height = `${window.innerHeight}px`;
+      document.getElementById("four").style.height = `${window.innerHeight}px`;
+
+      console.log(`innerHeight ${window.innerHeight}`);
+      console.log(`outerHeight ${window.outerHeight}`);
+      console.log(`outerHeight ${self}`);
+    </script>
+  </body>
+</html>

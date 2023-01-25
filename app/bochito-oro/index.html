@@ -54,7 +54,11 @@
         <img src="../../assets/bocho-oro/icon.png" alt="icon" />
       </div>
       <div class="menu">
-        <div class="profile"></div>
+        <div class="profile">
+          <div class="profile-menu">
+f
+          </div>
+        </div>
       </div>
     </nav>
     <main>
@@ -107,12 +111,12 @@
       <section id="main">
         <div class="main-title">Automoviles</div>
         <div class="main-tools">
-          <input type="text" name="name" id="name" />
+          <input   type="text" name="name" id="filterArray" />
           <input type="button" value="Recargar" />
           <input id="agregar" type="button" value="Agregar" />
         </div>
         <div class="main-table">
-          <table>
+          <table id="mainTable">
             <tr>
               <th>Marca</th>
               <th>Modelo</th>
@@ -122,97 +126,7 @@
               <th>Estatus</th>
               <th>Acciones</th>
             </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>Sonic</td>
-              <td>$150,000.00</td>
-              <td>Torréon</td>
-              <td>Independencia</td>
-              <td>Activa</td>
-              <td>Actions</td>
-            </tr>
-            <tr></tr>
+           
           </table>
         </div>
         <div class="main-table-tools">
@@ -232,8 +146,9 @@
     </main>
     <footer></footer>
 
-    <div class="dialog-add">
+    <div class="dialog-add" style="display: none;">
       <div class="form">
+
         <form action="#" method="post">
           <div class="form-action-button">
             <p>Agregar Vehiuclo</p>
@@ -243,48 +158,48 @@
 
           <div class="input-box">
             <div class="input-box-body">
-              <input type="text" name="name" id="name" placeholder=" " required/>
-              <label for="name">Name</label>
+              <input type="text" name="Marca" id="Marca" placeholder=" " required/>
+              <label for="Marca">Marca</label>
             </div>
           </div>
 
           <div class="input-box">
             <div class="input-box-body">
-              <input type="text" name="name" id="name" placeholder=" " required/>
-              <label for="name">Name</label>
+              <input type="text" name="Modelo" id="Modelo" placeholder=" " required/>
+              <label for="Modelo">Modelo</label>
             </div>
           </div>
 
           <div class="input-box">
             <div class="input-box-body">
-              <input type="text" name="name" id="name" placeholder=" " required/>
-              <label for="name">Name</label>
+              <input type="text" name="Precio" id="Precio" placeholder=" " required/>
+              <label for="Precio">Precio</label>
             </div>
           </div>
 
           <div class="input-box">
             <div class="input-box-body">
-              <input type="text" name="name" id="name" placeholder=" " required/>
-              <label for="name">Name</label>
+              <input type="text" name="Sucursal" id="Sucursal" placeholder=" " required/>
+              <label for="Sucursal">Sucursal</label>
             </div>
           </div>
 
           <div class="input-box">
             <div class="input-box-body">
-              <input type="text" name="name" id="name" placeholder=" " required/>
-              <label for="name">Name</label>
+              <input type="text" name="Lote" id="Lote" placeholder=" " required/>
+              <label for="Lote">Lote</label>
             </div>
           </div>
 
           <div class="input-box">
             <div class="input-box-body">
-              <input type="text" name="name" id="name" placeholder=" " required/>
-              <label for="name">Name</label>
+              <input type="text" name="Estatus" id="Estatus" placeholder=" " required/>
+              <label for="Estatus">Estatus</label>
             </div>
           </div>
 
           <div class="button-send">
-            <button type="submit">Submit</button>
+            <button id="sub">Submit</button>
           </div>
         </form>
       </div>

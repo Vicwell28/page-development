@@ -23,6 +23,23 @@ nav {
   background-color: black;
   width: 50px;
   border-radius: 50%;
+  position: relative;
+}
+
+.profile-menu{
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 105% ;
+  width: 100px;
+  left: -50px;
+  border-radius: 20px;
+  padding: 10px;
+  display: none;
+}
+
+.profile:hover .profile-menu{
+  display: block;
 }
 
 .card-title {
@@ -170,7 +187,7 @@ input[type="button"]:active {
 
 .dialog-add {
   position: fixed;
-  top: 0;
+  top: 0; 
   left: 0;
   right: 0;
   bottom: 0;
@@ -182,10 +199,11 @@ div.form {
   width: 60%;
   margin: auto;
   height: 80%;
-  position: relative;
-  top: 50%;
+ 
   background-color: #3ab395;
   transform: translateY(-50%);
+  position: relative;
+  top: 50%;
   overflow: auto;
   padding: 10px;
   border-radius: 20px;

@@ -1,0 +1,42 @@
+.container-footer{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+gap: 10px;
+}
+
+.container-footer div {
+    height: 200px;
+}
+
+.footer-img img{
+    width: 40%;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 95%;
+    letter-spacing: 1px;
+}
+
+.footer-footer {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

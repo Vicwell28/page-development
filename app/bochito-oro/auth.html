@@ -127,6 +127,45 @@
         flex-direction: column;
         gap: 30px;
       }
+.input-box .input-box-body label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+    opacity: 0.5;
+    font-size: 95%;
+    left: 10px;
+}
+
+.input-box .input-box-body input {
+  border: none;
+  position: absolute;
+  height: 92%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  left: 10px;
+}
+
+.input-box .input-box-body input:focus {
+  outline: none !important;
+}
+
+.input-box .input-box-body input:focus + label,
+.input-box .input-box-body input:not(:placeholder-shown) + label {
+  transform: translateY(-180%);
+  color: white;
+  opacity: 1;
+}
+
+.form2 {
+    background: #3AB395;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+}
 
       .form2 {
         background-color: #3ab395;

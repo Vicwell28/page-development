@@ -1,0 +1,167 @@
+html,
+body {
+  height: 100%;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  height: 70%;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.25),
+    8px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+main div {
+  width: 50%;
+  padding: 20px;
+}
+
+main div.form1 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main div.form1 h2 {
+  text-align: center;
+  font-size: 200%;
+}
+
+main div.form1 p {
+  text-align: justify;
+}
+
+main div.form1 button {
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #3ab395;
+  color: white;
+}
+
+.input-box {
+  height: 38px;
+  border-radius: 15px;
+  background-color: white;
+  width: 100%;
+}
+
+.input-box .input-box-body {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.input-box .input-box-body {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.input-box .input-box-body label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s;
+  opacity: 0.5;
+  font-size: 99%;
+  left: 0;
+  color: black !important;
+}
+
+.input-box .input-box-body input {
+  border: none;
+  position: absolute;
+  height: 92%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 99%;
+  left: 0;
+}
+
+.input-box .input-box-body input:focus {
+  outline: none !important;
+}
+
+.input-box .input-box-body input:focus + label,
+.input-box .input-box-body input:not(:placeholder-shown) + label {
+  transform: translateY(-180%);
+  color: white !important;
+  opacity: 1;
+}
+
+.form2 form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input-box .input-box-body label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s;
+  opacity: 0.5;
+  font-size: 95%;
+  left: 10px;
+}
+
+.input-box .input-box-body input {
+  border: none;
+  position: absolute;
+  height: 92%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  left: 10px;
+}
+
+.input-box .input-box-body input:focus {
+  outline: none !important;
+}
+
+.input-box .input-box-body input:focus + label,
+.input-box .input-box-body input:not(:placeholder-shown) + label {
+  transform: translateY(-180%);
+  color: white;
+  opacity: 1;
+}
+
+.form2 {
+  background: #3ab395;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.form2 {
+  background-color: #3ab395;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+#btn-iniciar {
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#olvi {
+  text-align: end;
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90%;
+}
+
+main #menu {
+  width: 15%;
+  gap: 10px;
+  background-color: #3ab395;
+  height: 100%;
+  padding: 10px 10px;
+  overflow-y: auto;
+}
+
+main #main {
+  width: 85%;
+  height: 100%;
+  padding: 20px 50px;
+}

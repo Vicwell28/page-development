@@ -96,12 +96,12 @@
         background-color: rgb(0, 0, 0, 0.2);
         width: 100%;
         padding: 0.5rem;
+        border-radius: 1rem;
 
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
-        border-radius: 1rem;
       }
 
       .navbar-search input {
@@ -122,44 +122,58 @@
         outline: none; /* Quitar el borde al enfocar */
       }
 
+      .navbar-paginator {
+        height: 3rem;
+        background-color: rgb(0, 0, 0, 0.2);
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 1rem;
 
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+      }
 
-
-
-
-
-
+      .navbar-paginator input {
+        padding: 0.8rem;
+        aspect-ratio: 2;
+        border: none;
+        border-radius: 0.5rem;
+        font-weight: bold;
+      }
 
       .accordion {
-      background-color: #f5f5f5;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
 
-    .accordion-heading {
-      background-color: #e9e9e9;
-      padding: 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+      .accordion-heading {
+        background-color: #e9e9e9;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
 
-    .accordion-content {
-      padding: 10px;
-      display: none;
-      transition: max-height 0.3s ease;
-      overflow: hidden;
-    }
+      .accordion-content {
+        padding: 10px;
+        display: none;
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+      }
 
-    .accordion-heading.active {
-      background-color: #ccc;
-    }
+      .accordion-heading.active {
+        background-color: #ccc;
+      }
 
-    .accordion-content.active {
-      display: block;
-      max-height: 1000px; /* Valor suficientemente grande para mostrar todo el contenido */
-    }
-
+      .accordion-content.active {
+        display: block;
+        max-height: 1000px; /* Valor suficientemente grande para mostrar todo el contenido */
+      }
     </style>
   </head>
   <body class="row">
@@ -175,29 +189,26 @@
       <nav>
         <h2>Title</h2>
 
-
-
-
         <div class="accordion-aside-navbar">
           <div class="accordion">
-            <div class="accordion-heading" onclick="toggleAccordion(this)">Acordeón 1</div>
-            <div class="accordion-content">
-              Contenido del acordeón 1
+            <div class="accordion-heading" onclick="toggleAccordion(this)">
+              Acordeón 1
             </div>
+            <div class="accordion-content">Contenido del acordeón 1</div>
           </div>
-        
+
           <div class="accordion">
-            <div class="accordion-heading" onclick="toggleAccordion(this)">Acordeón 2</div>
-            <div class="accordion-content">
-              Contenido del acordeón 2
+            <div class="accordion-heading" onclick="toggleAccordion(this)">
+              Acordeón 2
             </div>
+            <div class="accordion-content">Contenido del acordeón 2</div>
           </div>
-        
+
           <div class="accordion">
-            <div class="accordion-heading" onclick="toggleAccordion(this)">Acordeón 3</div>
-            <div class="accordion-content">
-              Contenido del acordeón 3
+            <div class="accordion-heading" onclick="toggleAccordion(this)">
+              Acordeón 3
             </div>
+            <div class="accordion-content">Contenido del acordeón 3</div>
           </div>
         </div>
       </nav>
@@ -223,7 +234,13 @@
 
       <main id="main-body" class="row"></main>
 
-      <div class="navbar-search"></div>
+      <div class="navbar-paginator" id="navbar-paginator">
+        <!-- <input type="button" value="1" class="btn-paginator"/>
+        <input type="button" value="2" class="btn-paginator"/>
+        <input type="button" value="3" class="btn-paginator"/>
+        <input type="button" value="4" class="btn-paginator"/>
+        <input type="button" value="5" class="btn-paginator"/> -->
+      </div>
     </main>
 
     <!-- footer -->
@@ -231,102 +248,5 @@
     <footer id="footer" class="col-12"></footer>
   </body>
 
-  <script>
-    class Pokemon {
-      constructor(name, weight, img) {
-        this.name = name;
-        this.weight = weight;
-        this.img = img;
-      }
-    }
-
-    let dataSource = [];
-    let dataSoruceFilter = [];
-
-    async function getIndexPokemon() {
-      try {
-        const promesa = await fetch(
-          "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0",
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-
-        const jsonRes = await promesa.json();
-
-        console.log(jsonRes);
-
-        const items = jsonRes.results;
-
-        const results = await Promise.all(
-          items.map(async (item) => {
-            const promesaPokemon = await fetch(item.url, {
-              method: "GET",
-              headers: {
-                "Content-Type": "application/json",
-              },
-            });
-
-            const jsonResPokemon = await promesaPokemon.json();
-            const imgPokemon =
-              jsonResPokemon.sprites.other["official-artwork"].front_default;
-            const weightPokemon = jsonResPokemon.weight;
-
-            return new Pokemon(item.name, weightPokemon, imgPokemon);
-          })
-        );
-
-        dataSource = results;
-        dataSoruceFilter = dataSource;
-
-        drawPokemons(results);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-
-    document
-      .getElementById("input-search")
-      .addEventListener("keyup", function (event) {
-        let restultado = dataSource.filter((item) => {
-          return (
-            item.name.includes(this.value) ||
-            `${item.weight}`.includes(this.value)
-          );
-        });
-
-        drawPokemons(restultado);
-      });
-
-    getIndexPokemon();
-
-    function drawPokemons(pokemons) {
-      const element = document.querySelector("#main-body");
-
-      element.innerHTML = "";
-
-      pokemons.forEach((item) => {
-        element.innerHTML += `
-            <div class="pokemon-card">
-            <div class="pokemon-card-img">
-                <div class="pokemon-card-img-style" style="background-image: url(${item.img})"></div>
-            </div>
-            <div class="pokemon-card-body">
-                <p>name: ${item.name}</p>
-                <p>weight: ${item.weight}</p>
-            </div>
-            </div>
-            `;
-      });
-    }
-
-    function toggleAccordion(element) {
-      const content = element.nextElementSibling;
-      element.classList.toggle("active");
-      content.classList.toggle("active");
-    }
-  </script>
+  <script type="module" src="/script/pokeapi/script.js"></script>
 </html>
